@@ -6,7 +6,10 @@
 }
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -58,7 +61,51 @@ h6 {
 .brand h1 span {
   color: #ffb03b;
 }
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
 
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -525,9 +572,9 @@ h6 {
 
 /********** Front Section **************/
 #hero {
-  background-image: url(/img/test.jpeg);
+  background-image: url(/img/hero.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: relative;
   z-index: 1;
 }
@@ -556,6 +603,8 @@ h6 {
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
+  line-height: 0.9;
+  font-weight: 400;
 }
 #hero h1:nth-child(1) {
   animation-delay: 1s;
@@ -800,7 +849,202 @@ h6 {
   font-family: "Comic Neue", sans-serif;
   color: #948c81;
 }
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding: 60px 0 0 0;
+}
+.contact .info-wrap {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
 
+.contact .info {
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #ffb03b;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff6e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #433f39;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #7a7368;
+}
+
+.contact .info:hover i {
+  background: #ffb03b;
+  color: #fff;
+}
+
+/* .contact .php-email-form {
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #ffb03b;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #ffa012;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+
+.section-form h2 {
+  margin-top: 10rem;
+}
+.contact-form {
+  margin: 1.5rem auto 3.5rem auto;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 97.5%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 60px;
+  background: #fff;
+}
+.section-form .info-wrap {
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
+  /* padding: 30px; */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
 /************************ Media Query For Tablet ********************/
 @media only screen and (min-width: 768px) {
   .cta {
@@ -815,6 +1059,7 @@ h6 {
   #hero h1 {
     font-size: 6.6rem;
   }
+
   /* End Hero */
 }
 /* End Media Query For Tablet */
