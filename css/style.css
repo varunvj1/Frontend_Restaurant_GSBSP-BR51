@@ -572,7 +572,7 @@ input[type="submit"]:active {
 
 /********** Front Section **************/
 #hero {
-  background-image: url(/img/hero.jpg);
+  background-image: url(img/hero.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1017,11 +1017,6 @@ input[type="submit"]:active {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 60px;
   background: #fff;
-}
-.section-form .info-wrap {
-  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
-  /* padding: 30px; */
 }
 
 input[type="text"],
