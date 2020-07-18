@@ -48,6 +48,7 @@ h6 {
   transition-property: background-color, color;
   border-radius: 50px;
 }
+
 .cta:hover {
   color: white;
   background-color: #ffb03b;
@@ -205,7 +206,7 @@ input[type="submit"]:active {
   color: white;
   padding: 9px 14px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
@@ -363,6 +364,7 @@ input[type="submit"]:active {
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+  font-size: 2rem;
 }
 
 .mobile-nav a:hover,
@@ -384,6 +386,7 @@ input[type="submit"]:active {
   letter-spacing: 1px;
   transition: 0.3s;
   display: inline-block;
+  margin-top: 30px;
 }
 
 .mobile-nav .book-a-table a:hover {
@@ -577,6 +580,7 @@ input[type="submit"]:active {
   background-position: top;
   position: relative;
   z-index: 1;
+  background-attachment: fixed;
 }
 #hero::after {
   content: "";
@@ -596,10 +600,11 @@ input[type="submit"]:active {
   justify-content: flex-start;
   border: 1px sold yellow;
 }
+
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 2rem;
+  font-size: 4.1rem;
   position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
@@ -852,6 +857,141 @@ input[type="submit"]:active {
   font-family: "Comic Neue", sans-serif;
   color: #948c81;
 }
+
+/*--------------------------------------------------------------
+# Booking Section
+--------------------------------------------------------------*/
+section#book-table {
+  padding: 80px 0px;
+  background-image: url(../img/book-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  background-attachment: fixed;
+  margin-top: 60px;
+}
+section#book-table > .container > .row {
+  justify-content: center;
+}
+#book-table .heading h2 {
+  margin-top: 0px;
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+section#book-table .left-image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+section#book-table .right-info {
+  height: 282px;
+  background-color: #fff;
+  margin-left: -30px;
+  padding: 30px;
+  position: relative;
+}
+section#book-table fieldset {
+  border: none;
+}
+section#book-table fieldset input::placeholder {
+  opacity: 0.7;
+}
+section#book-table .right-info h4 {
+  margin-top: 0px;
+  font-family: "Spectral", serif;
+  font-size: 28px;
+}
+
+section#book-table .right-info select {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #9a9a9a;
+  padding-left: 10px;
+  height: 40px;
+  background-color: #fff;
+}
+
+section#book-table .right-info input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: none;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+#book-table .right-info button {
+  /* width: 100%; */
+  display: inline-block;
+  background-color: #ffb03b;
+  color: #fff !important;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+}
+
+#book-table .right-info button:hover {
+  color: white;
+  background-color: #ff9b08;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  section#book-table .right-info button {
+    margin-top: -20px;
+  }
+}
+/* @media (max-width: 991px) {
+  section#book-table .right-info {
+    height: auto;
+    background-color: #fff;
+    margin-left: 0px;
+    padding: 30px;
+  }
+  section#book-table .right-info button {
+    margin-top: 30px;
+  }
+} */
+
+@media (max-width: 768px) {
+  section#book-table .right-info {
+    height: auto;
+    background-color: #fff;
+    margin-left: 0px;
+    padding: 30px;
+  }
+  section#book-table .right-info select {
+    margin-top: 30px;
+  }
+  section#book-table .right-info select.person {
+    margin-top: 0px;
+  }
+  section#book-table .right-info button {
+    margin-top: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1004,10 +1144,10 @@ input[type="submit"]:active {
     transform: rotate(360deg);
   }
 } */
+
 /* ----------------------------------------------- */
 /* FORM */
 /* ----------------------------------------------- */
-
 .section-form h2 {
   margin-top: 10rem;
 }
@@ -1030,6 +1170,7 @@ textarea {
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #ccc;
+  background-color: #fff;
 }
 
 textarea {

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <!-- Vendor CSS Files (from delicious)-->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -25,7 +26,7 @@
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <!-- <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 
-    <!-- Vendor css from udemy restaurant -->         
+    <!-- Vendor css from udemy restaurant -->
     <link rel="stylesheet" type="text/css" href="assets/vendor udemy/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor udemy/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/vendor udemy/ionicons.min.css">
@@ -34,7 +35,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
-    <title>Food Mania</title>
+    <title>Fat Baby</title>
 </head>
 
 <body>
@@ -67,7 +68,7 @@
                     <!-- <li><a href="#gallery">Gallery</a></li> -->
                     <li><a href="#contact">Contact</a></li>
 
-                    <li class="book-a-table text-center"><a href="#menu">Book a table</a></li>
+                    <li class="book-a-table text-center"><a href="#book-table">Book a table</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
 
@@ -107,8 +108,8 @@
             <div>
                 <h1>Hello, <span></span></h1>
                 <h1>Welcome to <span></span></h1>
-                <h1> <em> Food Mania </em> <span></span></h1>
-                <a href="" type="button" class="cta">Book a table
+                <h1> <em> Fat Baby </em> <span></span></h1>
+                <a href="#book-table" type="button" class="cta">Book a table
                 </a>
             </div>
         </div>
@@ -121,7 +122,7 @@
 
             <div class="section-title">
                 <h2>Why choose <span>Our Restaurant</span></h2>
-                <p>Hello, we're XYZ, your new premium food delivery service. We know you're always busy. No time
+                <p>Hello, we're <em>Fat Baby</em>, your new premium food delivery service. We know you're always busy. No time
                     for cooking. <br> So let us take care of that, we're really good at it, we promise!</p>
             </div>
 
@@ -520,50 +521,138 @@
     </section>
     <!-- End Menu Section -->
 
-        <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-                <div class="container">
-          
-                  <div class="section-title">
-                    <h2><span>Contact</span> Us </h2>
-                  </div>
+    <!---------------- Booking section --------------->
+    <section id="book-table" style="border: 1px solid yellow;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading section-title">
+                        <h2> Book your <span>Table</span></h2>
+                    </div>
                 </div>
-          
-                <div class="map">
-                  <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="left-image">
+                        <img src="img/book_left_image.jpg" alt="">
+                    </div>
                 </div>
-          
-                <div class="container mt-5">
-          
-                  <div class="info-wrap">
-                    <div class="row">
-                      <div class="col-lg-3 col-md-6 info">
+                <div class="col-md-4">
+                    <div class="right-info">
+                        <h4>Reservation</h4>
+                        <form id="form-submit" action="" method="get">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='day'>
+                                            <option value="">Select day</option>
+                                            <option value="Monday">Monday</option>
+                                            <option value="Tuesday">Tuesday</option>
+                                            <option value="Wednesday">Wednesday</option>
+                                            <option value="Thursday">Thursday</option>
+                                            <option value="Friday">Friday</option>
+                                            <option value="Saturday">Saturday</option>
+                                            <option value="Sunday">Sunday</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required name='hour'>
+                                            <option value="">Select hour</option>
+                                            <option value="10-00">10:00</option>
+                                            <option value="12-00">12:00</option>
+                                            <option value="14-00">14:00</option>
+                                            <option value="16-00">16:00</option>
+                                            <option value="18-00">18:00</option>
+                                            <option value="20-00">20:00</option>
+                                            <option value="22-00">22:00</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="name" type="name" class="form-control" id="name" placeholder="Full name" required="">
+                                    </fieldset> 
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <input name="phone" type="phone" class="form-control" id="phone" placeholder="Phone number" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <select required class="person p-1" name='persons'>
+                                            <option value=""># of people</option>
+                                            <option value="1-Person">1 </option>
+                                            <option value="2-Persons">2 </option>
+                                            <option value="3-Persons">3 </option>
+                                            <option value="4-Persons">4 </option>
+                                            <option value="5-Persons">5 </option>
+                                            <option value="6-Persons">6 </option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Book Table</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------- Booking section end ------------------>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2><span>Contact</span> Us </h2>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe style="border:0; width: 100%; height: 350px;"
+                src="
+                https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184245!2d77.20653218198595!3d28.628901718705755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdee88e47393c3f1!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1595090850926!5m2!1sen!2sin"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+        <div class="container mt-5">
+
+            <div class="info-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 info">
                         <i class="icofont-google-map"></i>
                         <h4>Location:</h4>
-                        <p>A108 Adam Street<br>New York, NY 535022</p>
-                      </div>
-          
-                      <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                        <p>A108 Connaught Place<br>New Delhi, India</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
                         <i class="icofont-clock-time icofont-rotate-90"></i>
                         <h4>Open Hours:</h4>
                         <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
-                      </div>
-          
-                      <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
                         <i class="icofont-envelope"></i>
                         <h4>Email:</h4>
                         <p>info@example.com<br>contact@example.com</p>
-                      </div>
-          
-                      <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
                         <i class="icofont-phone"></i>
                         <h4>Call:</h4>
                         <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
-                      </div>
                     </div>
-                  </div>
-          
-                  <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                </div>
+            </div>
+
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="form-row">
                       <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -589,81 +678,78 @@
                     </div>
                     <div class="text-center"><button type="submit">Send Message</button></div>
                   </form> -->
-                </div>
-                </section>
-                  <section class="section-form section-title">
-                        <h2><span>We're happy to hear</span> from you </h2>
+        </div>
+    </section>
+    <section class="section-form section-title">
+        <h2><span>We're happy to hear</span> from you </h2>
 
-                        <!-- <div class="row">
+        <!-- <div class="row">
                             <h2>We're happy to hear from you</h2>
                         </div> -->
-                        <div class="info-wrap container">
-                        <div class="row">
-                            <form method="post" action="#" class="contact-form">
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label for="name">Name</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label for="find-us">How did you find us?</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <select name="find-us" id="find-us">
-                                            <option value="friends" selected>Friends</option>
-                                            <option value="search">Search engine</option>
-                                            <option value="ad">Advertisement</option>
-                                            <option value="other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label>Newsletter?</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <input type="checkbox" name="news" id="news" checked> Yes, please
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label>Drop us a line</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <textarea name="message" placeholder="Your message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col span-1-of-3">
-                                        <label>&nbsp;</label>
-                                    </div>
-                                    <div class="col span-2-of-3">
-                                        <input type="submit" value="Send it!">
-                                    </div>
-                                </div>
-                                
-                            </form>
+        <div class="info-wrap container">
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
 
-                            
-                        </div>
-                        </div>
-                    </section>
-          
-                <!-- </div>
-              </section> -->
-              <!-- End Contact Section -->
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
 
 
 
@@ -690,6 +776,12 @@
 
     <!-- <script src="js/script.js"></script> -->
     <script src="js/main.js"></script>
+
+<!------------------------ Smooth acrolling on all links ------------------------------------------>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/smooth-scroll-a.js"></script>
+
 </body>
+
 
 </html>
