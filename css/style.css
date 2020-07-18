@@ -172,7 +172,7 @@ input[type="submit"]:active {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 70px;
+  max-height: 80px;
 }
 
 @media (max-width: 992px) {
@@ -572,9 +572,9 @@ input[type="submit"]:active {
 
 /********** Front Section **************/
 #hero {
-  background-image: url(img/hero.jpg);
+  background-image: url(../img/hero6.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   z-index: 1;
 }
@@ -594,16 +594,17 @@ input[type="submit"]:active {
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
+  border: 1px sold yellow;
 }
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 2rem;
   position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
-  line-height: 0.9;
+  margin: 0;
   font-weight: 400;
 }
 #hero h1:nth-child(1) {
@@ -615,6 +616,7 @@ input[type="submit"]:active {
 #hero h1:nth-child(3) {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
+  font-family: "Poppins", sans-serif;
 }
 #hero h1 span {
   position: absolute;
@@ -668,6 +670,7 @@ input[type="submit"]:active {
   100% {
     color: #ffb03b;
     font-weight: 700;
+    font-family: "Poppins", sans-serif;
   }
 }
 /* End Keyframes */
@@ -1052,7 +1055,7 @@ input[type="checkbox"] {
 
   /* Hero */
   #hero h1 {
-    font-size: 6.6rem;
+    font-size: 6.5rem;
   }
 
   /* End Hero */
