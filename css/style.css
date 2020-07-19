@@ -901,7 +901,9 @@ section#book-table .right-info {
 }
 section#book-table fieldset {
   border: none;
+  /* margin: 0 0 35px 0; */
 }
+
 section#book-table fieldset input::placeholder {
   opacity: 0.7;
 }
@@ -921,9 +923,10 @@ section#book-table .right-info select {
   font-size: 14px;
   color: #9a9a9a !important;
   /* color: #fff; */
-  padding-left: 10px;
+  /* padding-left: 10px; */
   height: 40px;
   background-color: #fff;
+  margin-bottom: 10px;
 }
 /* section#book-table .right-info select:hover {
   -webkit-appearance: none;
@@ -931,8 +934,8 @@ section#book-table .right-info select {
   color: #fff;
 } */
 section#book-table .right-info input {
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
   box-shadow: none;
   outline: none;
   border-right: none;
@@ -970,8 +973,8 @@ section#book-table .right-info select div.form-group {
 }
 div.input-group-prepend {
   height: 40px;
-  /* margin-top: 30px;
-  margin-bottom: 30px; */
+  /* margin-top: 30px; */
+  /* margin-bottom: 20px; */
 }
 
 .ppDate {
@@ -1027,6 +1030,9 @@ div.input-group-prepend {
   }
   section#book-table .right-info button {
     margin-top: 30px;
+  }
+  div.hours {
+    margin-bottom: 10px;
   }
 }
 
