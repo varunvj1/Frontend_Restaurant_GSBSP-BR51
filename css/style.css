@@ -1349,7 +1349,6 @@ footer p {
   margin-top: 20px;
 }
 
-/************************ Media Query For Tablet ********************/
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 1.8rem;
@@ -1368,7 +1367,6 @@ footer p {
 }
 /* End Media Query For Tablet */
 
-/******************** Media Query For Desktop ***********************/
 @media only screen and (min-width: 1200px) {
   /* header */
   #header .hamburger {
@@ -1392,4 +1390,5 @@ footer p {
   }
   /* End header */
 }
+
 /* End  Media Query For Desktop */

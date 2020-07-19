@@ -586,10 +586,11 @@
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text">@</span>
+                                                    <span class="input-group-text"> <b>@</b></span>
                                                 </div>
-                                                <input type="date" class="form-control ppDate" id="from-date"
-                                                    aria-describedby="date-design-prepend" placeholder="Select Date">
+                                                <input type="text" class="form-control ppDate mb-0" id="from-date"
+                                                    aria-describedby="date-design-prepend" placeholder="Select Date"
+                                                    onfocus="(this.type='date')" onblur="(this.type='text')" style="height: 40px;">
                                             </div>
                                         </div>
                                     </fieldset>
