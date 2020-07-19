@@ -595,10 +595,10 @@ input[type="submit"]:active {
 }
 #hero .hero {
   max-width: 1200px;
+  height: 50px;
   margin: 0 auto;
   padding: 0 50px;
   justify-content: flex-start;
-  border: 1px sold yellow;
 }
 
 #hero h1 {
@@ -611,9 +611,11 @@ input[type="submit"]:active {
   animation-delay: 1s;
   margin: 0;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 #hero h1:nth-child(1) {
   animation-delay: 1s;
+  margin-top: 5rem;
 }
 #hero h1:nth-child(2) {
   animation-delay: 2s;
@@ -622,6 +624,7 @@ input[type="submit"]:active {
   animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
 }
 #hero h1 span {
   position: absolute;
@@ -916,15 +919,20 @@ section#book-table .right-info select {
   outline: none;
   border-bottom: 1px solid #eee;
   font-size: 14px;
-  color: #9a9a9a;
+  color: #9a9a9a !important;
+  /* color: #fff; */
   padding-left: 10px;
   height: 40px;
   background-color: #fff;
 }
-
+/* section#book-table .right-info select:hover {
+  -webkit-appearance: none;
+  background-color: #ffb03b;
+  color: #fff;
+} */
 section#book-table .right-info input {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   box-shadow: none;
   outline: none;
   border-right: none;
@@ -957,33 +965,63 @@ section#book-table .right-info input {
   background-color: #ff9b08;
   text-decoration: none;
 }
+section#book-table .right-info select div.form-group {
+  height: 40px;
+}
+div.input-group-prepend {
+  height: 40px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+}
+
+.ppDate {
+  height: 40px;
+  font-size: 12px;
+  padding-left: 6px;
+}
+.ppDate::-webkit-inner-spin-button,
+.ppDate::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.ppDate:focus::-webkit-calendar-picker-indicator,
+.ppDate:hover::-webkit-calendar-picker-indicator {
+  display: block;
+  -webkit-appearance: menulist;
+}
+.ppDate::-webkit-clear-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.constrained {
+  max-width: 60px;
+}
+
 @media (max-width: 1200px) {
   section#book-table .right-info button {
     margin-top: -20px;
   }
-}
-/* @media (max-width: 991px) {
-  section#book-table .right-info {
-    height: auto;
-    background-color: #fff;
-    margin-left: 0px;
-    padding: 30px;
-  }
-  section#book-table .right-info button {
-    margin-top: 30px;
-  }
-} */
 
-@media (max-width: 768px) {
+  /* @media (max-width: 991px) {
+  section#book-table .right-info {
+    height: auto;
+    background-color: #fff;
+    margin-left: 0px;
+    padding: 30px;
+  } */
+  section#book-table .right-info button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
   section#book-table .right-info {
     height: auto;
     background-color: #fff;
     margin-left: 0px;
     padding: 30px;
   }
-  section#book-table .right-info select {
-    margin-top: 30px;
-  }
+
   section#book-table .right-info select.person {
     margin-top: 0px;
   }
@@ -997,6 +1035,10 @@ section#book-table .right-info input {
 --------------------------------------------------------------*/
 .contact {
   padding: 60px 0 0 0;
+}
+.contact .section-title {
+  padding-bottom: 5px;
+  margin-top: 60px;
 }
 .contact .info-wrap {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1184,6 +1226,123 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="email"] {
+    height: 2rem;
+    font-size: 1.4rem;
+  }
+
+  input[type="email"] {
+    margin-bottom: 5px;
+  }
+  section.section-form h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
+
+.contact-form {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+  /* background-color: #333; */
+  padding: 30px;
+  font-size: 1.4rem;
+  background-color: #212529;
+  width: 100%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.fa:hover {
+  color: #00aced;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /************************ Media Query For Tablet ********************/
 @media only screen and (min-width: 768px) {
   .cta {

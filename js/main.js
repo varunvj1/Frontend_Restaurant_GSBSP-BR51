@@ -185,34 +185,34 @@
   //         );
   //   });
 
-  heroCarousel.on("slid.bs.carousel", function(e) {
-    $(this)
-      .find("h2")
-      .addClass("animate__animated animate__fadeInDown");
-    $(this)
-      .find("p, .btn-menu, .btn-book")
-      .addClass("animate__animated animate__fadeInUp");
-  });
+  // heroCarousel.on("slid.bs.carousel", function(e) {
+  //   $(this)
+  //     .find("h2")
+  //     .addClass("animate__animated animate__fadeInDown");
+  //   $(this)
+  //     .find("p, .btn-menu, .btn-book")
+  //     .addClass("animate__animated animate__fadeInUp");
+  // });
 
   // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 100) {
+  //     $(".back-to-top").fadeIn("slow");
+  //   } else {
+  //     $(".back-to-top").fadeOut("slow");
+  //   }
+  // });
 
-  $(".back-to-top").click(function() {
-    $("html, body").animate(
-      {
-        scrollTop: 0
-      },
-      1500,
-      "easeInOutExpo"
-    );
-    return false;
-  });
+  // $(".back-to-top").click(function() {
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0
+  //     },
+  //     1500,
+  //     "easeInOutExpo"
+  //   );
+  //   return false;
+  // });
 
   // Menu list isotope and filter
   $(window).on("load", function() {
@@ -232,20 +232,20 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".events-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // $(".events-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // $(".testimonials-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
   // Initiate venobox lightbox
   $(document).ready(function() {
