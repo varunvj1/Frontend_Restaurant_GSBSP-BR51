@@ -982,9 +982,6 @@ input[type="submit"] {
   background-color: #ffb03b;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1.4px;
-  font-weight: 400;
-  border: none;
 }
 textarea {
   height: 100px;
